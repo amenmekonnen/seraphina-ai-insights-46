@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
@@ -14,20 +15,26 @@ const Hero: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight">
-              AI-Powered <span className="text-seraphina-purple">Health</span> Assistant
-              <span className="text-seraphina-accent ml-2">🧠</span>
+              Early Breast Cancer <span className="text-seraphina-purple">Detection</span>
+              <span className="text-seraphina-accent ml-2">⚕️</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-700 max-w-xl mx-auto lg:mx-0 mb-8">
-              Revolutionize your healthcare journey with personalized AI diagnostics, real-time insights, and intelligent wellness recommendations.
+            <p className="text-lg md:text-xl text-gray-700 max-w-xl mx-auto lg:mx-0 mb-4">
+              AI-powered thermal sensing technology for early breast cancer detection, fitness tracking, and wellness community.
+            </p>
+            
+            <p className="text-md md:text-lg text-seraphina-purple font-medium max-w-xl mx-auto lg:mx-0 mb-8">
+              "From Awareness to Action: Tech That Feels You."
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button className="bg-gradient-to-r from-seraphina-purple to-seraphina-dark text-white px-6 py-6 rounded-full font-medium text-lg hover:shadow-lg hover:opacity-90 transition-all">
-                Try Live Demo
+              <Button className="bg-gradient-to-r from-seraphina-purple to-seraphina-dark text-white px-6 py-6 rounded-full font-medium text-lg hover:shadow-lg hover:opacity-90 transition-all" asChild>
+                <Link to="/waitlist">
+                  Join Beta Waitlist
+                </Link>
               </Button>
               <Button variant="outline" className="border-seraphina-purple text-seraphina-purple px-6 py-6 rounded-full font-medium text-lg hover:bg-seraphina-light transition-all">
-                Book a Demo
+                Learn More
               </Button>
             </div>
           </div>
@@ -36,16 +43,16 @@ const Hero: React.FC = () => {
             <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800" 
-                alt="AI Health Assistant in action" 
+                alt="Seraphina thermal sensing technology" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               <div className="absolute bottom-8 left-8 right-8 text-white">
                 <div className="flex items-center gap-4 mb-3">
                   <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse"></div>
-                  <span className="text-sm font-medium">AI Analysis Active</span>
+                  <span className="text-sm font-medium">Smart Thermal Sensing</span>
                 </div>
-                <p className="font-medium text-lg">Personalized health insights processed in real-time</p>
+                <p className="font-medium text-lg">HIPAA-compliant early detection technology coming soon</p>
               </div>
             </div>
             

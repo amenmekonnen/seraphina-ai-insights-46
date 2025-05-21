@@ -22,6 +22,9 @@ const Navbar: React.FC = () => {
       <div className="hidden md:flex gap-6 items-center">
         <Link to="/" className="text-gray-700 hover:text-seraphina-purple transition-colors">Home</Link>
         <Link to="/features" className="text-gray-700 hover:text-seraphina-purple transition-colors">Features</Link>
+        <Link to="/dashboard" className="text-gray-700 hover:text-seraphina-purple transition-colors">Dashboard</Link>
+        <Link to="/health-data" className="text-gray-700 hover:text-seraphina-purple transition-colors">Health Data</Link>
+        <Link to="/blog" className="text-gray-700 hover:text-seraphina-purple transition-colors">Blog</Link>
         <Link to="/about" className="text-gray-700 hover:text-seraphina-purple transition-colors">About</Link>
         <Link to="/contact" className="text-gray-700 hover:text-seraphina-purple transition-colors">Contact</Link>
       </div>
@@ -35,8 +38,8 @@ const Navbar: React.FC = () => {
 
       {/* Call to Action Button */}
       <div className="hidden md:block">
-        <Button className="bg-gradient-to-r from-seraphina-purple to-seraphina-dark hover:opacity-90 transition-opacity">
-          Try Live Demo
+        <Button className="bg-gradient-to-r from-seraphina-purple to-seraphina-dark hover:opacity-90 transition-opacity" asChild>
+          <Link to="/waitlist">Join Beta</Link>
         </Button>
       </div>
 
@@ -45,10 +48,13 @@ const Navbar: React.FC = () => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4 px-6 z-50 flex flex-col gap-4">
           <Link to="/" className="text-gray-700 hover:text-seraphina-purple transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Home</Link>
           <Link to="/features" className="text-gray-700 hover:text-seraphina-purple transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Features</Link>
+          <Link to="/dashboard" className="text-gray-700 hover:text-seraphina-purple transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Dashboard</Link>
+          <Link to="/health-data" className="text-gray-700 hover:text-seraphina-purple transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Health Data</Link>
+          <Link to="/blog" className="text-gray-700 hover:text-seraphina-purple transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
           <Link to="/about" className="text-gray-700 hover:text-seraphina-purple transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>About</Link>
           <Link to="/contact" className="text-gray-700 hover:text-seraphina-purple transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
-          <Button className="bg-gradient-to-r from-seraphina-purple to-seraphina-dark hover:opacity-90 transition-opacity w-full mt-2">
-            Try Live Demo
+          <Button className="bg-gradient-to-r from-seraphina-purple to-seraphina-dark hover:opacity-90 transition-opacity w-full mt-2" asChild>
+            <Link to="/waitlist" onClick={() => setMobileMenuOpen(false)}>Join Beta</Link>
           </Button>
         </div>
       )}
