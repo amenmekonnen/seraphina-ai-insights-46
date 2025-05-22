@@ -30,10 +30,10 @@ export default {
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				seraphina: {
-					purple: '#8B5CF6',
-					light: '#EDE9FE',
-					dark: '#4C1D95',
-					accent: '#F97316',
+					darkBlue: '#0A1128',
+					teal: '#16697A',
+					black: '#111111',
+					pink: '#FF6B81',
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',

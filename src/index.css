@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 260 60% 99%;
-    --foreground: 260 10% 10%;
+    --background: 200 30% 98%;
+    --foreground: 200 10% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 260 10% 10%;
+    --card-foreground: 200 10% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 260 10% 10%;
+    --popover-foreground: 200 10% 10%;
 
-    --primary: 260 75% 60%;
-    --primary-foreground: 260 10% 98%;
+    --primary: 196 67% 28%;
+    --primary-foreground: 196 10% 98%;
 
-    --secondary: 260 20% 96%;
-    --secondary-foreground: 260 10% 10%;
+    --secondary: 196 20% 96%;
+    --secondary-foreground: 196 10% 10%;
 
-    --muted: 260 20% 96%;
-    --muted-foreground: 260 10% 40%;
+    --muted: 196 20% 96%;
+    --muted-foreground: 196 10% 40%;
 
-    --accent: 30 100% 50%;
-    --accent-foreground: 260 10% 10%;
+    --accent: 354 100% 71%;
+    --accent-foreground: 200 10% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 260 20% 90%;
-    --input: 260 20% 90%;
-    --ring: 260 75% 60%;
+    --border: 200 20% 90%;
+    --input: 200 20% 90%;
+    --ring: 196 67% 28%;
 
     --radius: 1rem;
   }
@@ -43,9 +43,9 @@
   }
 
   body {
-    @apply bg-background text-foreground font-poppins;
+    @apply bg-seraphina-darkBlue text-white font-poppins;
     background-image: radial-gradient(
-      rgba(139, 92, 246, 0.03) 1px,
+      rgba(22, 105, 122, 0.05) 1px,
       transparent 1px
     );
     background-size: 30px 30px;
@@ -56,8 +56,8 @@
   }
   
   .blur-blob {
-    @apply absolute rounded-full opacity-60 blur-3xl filter;
-    background: linear-gradient(to right, rgba(139, 92, 246, 0.4), rgba(249, 115, 22, 0.2));
+    @apply absolute rounded-full opacity-30 blur-3xl filter;
+    background: #FF6B81;
     z-index: -1;
     animation: blob-move 20s infinite ease-in-out alternate;
   }
@@ -72,14 +72,13 @@
   }
 
   .feature-card {
-    @apply relative overflow-hidden rounded-2xl border border-seraphina-light/50 bg-white/50 p-6 backdrop-blur-sm transition-all hover:shadow-lg;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(237, 233, 254, 0.5));
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+    @apply relative overflow-hidden rounded-2xl border border-seraphina-teal/20 bg-seraphina-darkBlue/50 p-6 backdrop-blur-sm transition-all hover:shadow-lg;
+    box-shadow: 0 8px 32px rgba(16, 17, 40, 0.1);
   }
   
   .feature-card:before {
     content: "";
-    @apply absolute inset-0 bg-gradient-to-r from-seraphina-purple/10 to-seraphina-accent/5 opacity-0 transition-opacity;
+    @apply absolute inset-0 bg-seraphina-teal/5 opacity-0 transition-opacity;
     z-index: -1;
   }
   

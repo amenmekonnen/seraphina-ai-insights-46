@@ -17,6 +17,9 @@ import Blog from "./pages/Blog";
 import Settings from "./pages/Settings";
 import Referral from "./pages/Referral";
 import Waitlist from "./pages/Waitlist";
+import TryBeta from "./pages/TryBeta";
+import BetaDemo from "./pages/BetaDemo";
+import MonthlyCheckup from "./pages/MonthlyCheckup";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +42,9 @@ const App = () => (
           <Route path="/settings" element={<Settings />} />
           <Route path="/referral" element={<Referral />} />
           <Route path="/waitlist" element={<Waitlist />} />
+          <Route path="/try-beta" element={<TryBeta />} />
+          <Route path="/beta-demo" element={<BetaDemo />} />
+          <Route path="/monthly-checkup" element={<MonthlyCheckup />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
