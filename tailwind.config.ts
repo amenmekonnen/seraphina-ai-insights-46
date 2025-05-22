@@ -30,10 +30,11 @@ export default {
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				seraphina: {
-					darkBlue: '#0A1128',
-					teal: '#16697A',
-					black: '#111111',
-					pink: '#FF6B81',
+					darkBlue: '#0B1F3F', // AdaVerse Midnight Navy
+					teal: '#00F0FF',     // AdaVerse Radiant Aqua
+					black: '#111111',    
+					pink: '#DA00FF',     // AdaVerse Electric Fuchsia
+					gray: '#CCCCCC',     // AdaVerse Stone Gray
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -97,6 +98,8 @@ export default {
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif'],
 				'playfair': ['"Playfair Display"', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
+				'ibm-plex': ['"IBM Plex Sans"', 'sans-serif'],
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;700;900&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,8 +16,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 200 10% 10%;
 
-    --primary: 196 67% 28%;
-    --primary-foreground: 196 10% 98%;
+    --primary: 216 72% 15%;
+    --primary-foreground: 210 20% 98%;
 
     --secondary: 196 20% 96%;
     --secondary-foreground: 196 10% 10%;
@@ -25,7 +25,7 @@
     --muted: 196 20% 96%;
     --muted-foreground: 196 10% 40%;
 
-    --accent: 354 100% 71%;
+    --accent: 306 100% 50%;
     --accent-foreground: 200 10% 10%;
 
     --destructive: 0 84.2% 60.2%;
@@ -43,7 +43,7 @@
   }
 
   body {
-    @apply bg-seraphina-darkBlue text-white font-poppins;
+    @apply bg-seraphina-darkBlue text-white font-ibm-plex;
     background-image: radial-gradient(
       rgba(22, 105, 122, 0.05) 1px,
       transparent 1px
@@ -52,12 +52,12 @@
   }
   
   h1, h2, h3, h4 {
-    @apply font-playfair;
+    @apply font-inter font-bold tracking-tight;
   }
   
   .blur-blob {
     @apply absolute rounded-full opacity-30 blur-3xl filter;
-    background: #FF6B81;
+    background: #DA00FF;
     z-index: -1;
     animation: blob-move 20s infinite ease-in-out alternate;
   }
