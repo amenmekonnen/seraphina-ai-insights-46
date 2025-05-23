@@ -30,15 +30,17 @@ app.post('/api/waitlist', async (req, res) => {
     }
   });
 
+try {
   await transporter.sendMail({
     from: process.env.MAIL_USER,
     to: email,
     subject: 'Thanks for joining the waitlist!',
-    text: 'You're on the list. We'll keep you posted.'
+    text: "You're on the list. We'll keep you posted."
   });
-
-  res.status(200).send('Added to waitlist');
-});
+} catch (error) {
+  console.error('Email failed to send:', error);
+  return res.status(500).send('Failed to send confirmation email');
+}
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
