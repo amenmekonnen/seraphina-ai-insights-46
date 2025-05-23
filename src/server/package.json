@@ -1,0 +1,22 @@
+
+{
+  "name": "seraphina-waitlist-server",
+  "version": "1.0.0",
+  "description": "Server for Seraphina waitlist email collection",
+  "main": "waitlistServer.js",
+  "scripts": {
+    "start": "node waitlistServer.js",
+    "dev": "nodemon waitlistServer.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
