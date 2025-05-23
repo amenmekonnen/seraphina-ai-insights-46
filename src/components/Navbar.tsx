@@ -41,10 +41,10 @@ const Navbar: React.FC = () => {
 
       {/* Social Links & CTA */}
       <div className="hidden md:flex items-center gap-4">
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <a href="https://www.instagram.com/adaverse.tech?igsh=eTFkbHd5c3U4eDg0" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <Instagram className="w-5 h-5 text-white hover:text-seraphina-teal transition-colors" />
         </a>
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <a href="https://www.facebook.com/share/18ZZ4SGPsR/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
           <Facebook className="w-5 h-5 text-white hover:text-seraphina-teal transition-colors" />
         </a>
         <Button className="bg-seraphina-teal hover:bg-seraphina-teal/80 transition-colors font-inter" asChild>
@@ -67,10 +67,10 @@ const Navbar: React.FC = () => {
           <Link to="/about" className="text-white hover:text-seraphina-teal transition-colors py-2 font-inter" onClick={() => setMobileMenuOpen(false)}>About</Link>
           
           <div className="flex items-center gap-4 py-2">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/adaverse.tech?igsh=eTFkbHd5c3U4eDg0" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <Instagram className="w-5 h-5 text-white hover:text-seraphina-teal transition-colors" />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/share/18ZZ4SGPsR/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <Facebook className="w-5 h-5 text-white hover:text-seraphina-teal transition-colors" />
             </a>
           </div>
