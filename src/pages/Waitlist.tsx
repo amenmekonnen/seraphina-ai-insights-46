@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -18,8 +17,8 @@ const Waitlist: React.FC = () => {
     setIsSubmitting(true);
     
     try {
-      // Send to server endpoint (update URL when deployed)
-      const response = await fetch('http://localhost:3001/api/waitlist', {
+      // Send to server endpoint (update URL to match your deployment)
+      const response = await fetch('http://localhost:5000/api/waitlist', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -28,8 +27,7 @@ const Waitlist: React.FC = () => {
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Failed to join waitlist');
+        throw new Error('Failed to join waitlist');
       }
 
       toast({
